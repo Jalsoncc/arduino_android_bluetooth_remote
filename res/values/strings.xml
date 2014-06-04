@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartMote</string>
+    <string name="exit">Exit</string>
+    <string name="action_settings">Hello world!</string>
+    <string name="title_name"><b><i>SMARTMOTE</i></b></string>
+    <string name="power">Power</string>
+    <string name="volume">Volume</string>
+    <string name="channel">Channel</string>
+    <string name="author">M.A.R.S Rathsara</string>
+    <string name="not_connected">Not connected to the device</string>
+    <string name="connected">Connected to the device</string>
+    <string name="connecting">Connecting . . .</string>
+
+</resources>

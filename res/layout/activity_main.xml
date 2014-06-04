@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="10dip" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:overScrollMode="always"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            tools:context=".MainActivity" >
+
+            <!-- footer -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="488dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <!-- header -->
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="90dip"
+                    android:layout_height="30dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/top" />
+
+                <!-- title name -->
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:gravity="center"
+                    android:text="@string/title_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <!-- bt connected information -->
+
+
+                <!-- connected text -->
+
+                <TextView
+                    android:id="@+id/conTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/not_connected"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <!-- power on/off buttons -->
+
+                <ImageButton
+                    android:id="@+id/btnPower"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_btn_power" />
+
+                <!-- power text -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:text="@string/power"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <!-- vol up/down buttons -->
+
+                <ImageButton
+                    android:id="@+id/btnV_up"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_btn_volume_up" />
+
+                <!-- vol text -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/volume"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btnV_down"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginBottom="10dip"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_btn_volume_down" />
+
+                <!-- channel up/down buttons -->
+
+                <ImageButton
+                    android:id="@+id/btnC_up"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_btn_channel_up" />
+
+                <!-- channel text -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/channel"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btnC_down"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_btn_channel_down" />
+
+                <!-- author name -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|right"
+                    android:paddingRight="10dp"
+                    android:text="@string/author" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
